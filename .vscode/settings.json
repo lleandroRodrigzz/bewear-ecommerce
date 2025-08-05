@@ -6,8 +6,8 @@
     ],
     "eslint.validate": [
         "javascript",
-        "typescript",
         "javascriptreact",
+        "typescript",
         "typescriptreact"
     ],
     "editor.codeActionsOnSave": {
