@@ -78,6 +78,7 @@ const SignInForm = () => {
       provider: "google",
     });
   };
+
   return (
     <>
       <Card className="w-full">
