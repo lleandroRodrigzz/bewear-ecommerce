@@ -1,7 +1,5 @@
 "use client";
 
-import { title } from "process";
-
 import { productTable, productVariantTable } from "@/db/schema";
 
 import ProductItem from "./product-item";
