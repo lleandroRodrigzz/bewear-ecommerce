@@ -11,6 +11,7 @@ import { productTable, productVariantTable } from "@/db/schema";
 import { formatCentsToBRL } from "@/helpers/money";
 
 import VariantSelector from "./components/variant-selector";
+import QuantitySelector from "./components/product-actions";
 
 interface ProductVariantPageProps {
   params: Promise<{ slug: string }>;
@@ -73,7 +74,9 @@ const ProductVariantPage = async ({ params }: ProductVariantPageProps) => {
           </h3>
         </div>
 
-        <div className="px-5">{/* QUANTIDADE */}</div>
+        <div className="px-5">{/* QUANTIDADE */}
+          <QuantitySelector/>
+        </div>
 
         <div className="flex flex-col space-y-4 px-5">
           {/* BOTOES */}
