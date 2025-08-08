@@ -4,10 +4,10 @@ import Image from "next/image";
 import CategorySelector from "@/components/common/category-selector";
 import Footer from "@/components/common/footer";
 import { Header } from "@/components/common/header";
+import Partners from "@/components/common/partners";
 import ProductList from "@/components/common/product-list";
 import { db } from "@/db";
 import { productTable } from "@/db/schema";
-import Partners from "@/components/common/partners";
 
 const Home = async () => {
   const products = await db.query.productTable.findMany({
@@ -40,7 +40,7 @@ const Home = async () => {
           />
         </div>
 
-        <Partners/>
+        <Partners />
 
         <ProductList products={products} title="Mais vendidos" />
 

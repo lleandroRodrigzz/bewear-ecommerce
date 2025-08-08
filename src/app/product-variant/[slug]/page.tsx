@@ -26,6 +26,7 @@ const ProductVariantPage = async ({ params }: ProductVariantPageProps) => {
         <Image
           src={productVariant.imageUrl}
           alt={productVariant.name}
+          sizes="100vw"
           width={0}
           height={0}
           className="h-auto w-full rounded-3xl"
