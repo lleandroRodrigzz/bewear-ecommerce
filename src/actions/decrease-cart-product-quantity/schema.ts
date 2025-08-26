@@ -1,9 +1,9 @@
 import { z } from "zod";
 
-export const decraseCartProductQuantitySchema = z.object({
+export const decreaseCartProductQuantitySchema = z.object({
   cartItemId: z.uuid(),
 });
 
-export type DecraseCartProductQuantitySchema = z.infer<
-  typeof decraseCartProductQuantitySchema
+export type DecreaseCartProductQuantitySchema = z.infer<
+  typeof decreaseCartProductQuantitySchema
 >;
