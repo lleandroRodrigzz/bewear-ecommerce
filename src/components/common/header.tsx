@@ -1,6 +1,6 @@
 "use client";
 
-import { LogInIcon, LogOutIcon, MenuIcon } from "lucide-react";
+import { LogInIcon, LogOutIcon, MenuIcon, Package } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -66,7 +66,18 @@ export const Header = () => {
                       <LogOutIcon />
                     </Button>
                   </div>
-                </>
+                  <div className="h-px w-full bg-muted" />
+
+                  <Link href="/my-orders" className="w-full">
+                    <Button
+                      variant="outline"
+                      className="w-full justify-start gap-2"
+                    >
+                      <Package size={16} /> {/* <-- Ícone alterado */}
+                      Meus Pedidos
+                    </Button>
+                  </Link>
+              </>
               ) : (
                 <div className="flex items-center justify-between">
                   <h2 className="font-semibold">Olá. Faça seu login!</h2>
