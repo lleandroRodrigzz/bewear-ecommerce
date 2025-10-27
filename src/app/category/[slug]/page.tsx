@@ -34,7 +34,7 @@ const CategoryPage = async ({ params }: CategoryPageProps) => {
             <ProductItem
               key={product.id}
               product={product}
-              textContainerClassname="max-w-full"
+              textContainerClassName="max-w-full"
             />
           ))}
         </div>
